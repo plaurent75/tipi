@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Tipi\n"
-"POT-Creation-Date: 2017-07-03 11:43+0200\n"
-"PO-Revision-Date: 2017-07-03 11:47+0200\n"
+"POT-Creation-Date: 2017-07-03 12:53+0200\n"
+"PO-Revision-Date: 2017-07-03 12:54+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -147,7 +147,7 @@ msgstr "Entrez vos paramètres ici pour utiliser la passerelle de paiement TIPI"
 
 #: public/partials/faq.php:4
 msgid "Help and frequently asked questions"
-msgstr ""
+msgstr "Aide et questions fréquentes"
 
 #: public/partials/objet-type.php:7
 msgid "Type"

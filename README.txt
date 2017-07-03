@@ -38,7 +38,7 @@ Automatic updates should work like a charm; as always though, ensure you backup 
 
 1. The settings panel used to configure the gateway.
 2. Normal checkout with TIPI.
-3. The Front-end Faqs
+3. The Front-end collapsing Faqs
 4. The Back-end Faqs
 5. The front-end selector for Invoice Type
 6. The back-end for Invoice Type
