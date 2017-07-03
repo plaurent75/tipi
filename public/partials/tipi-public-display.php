@@ -74,7 +74,7 @@ if($this->tipi_gateway_settings_options['input_mode_1']=='T'){
         </div>
         <div class="well">
             <ul class="list-unstyled infotipi">
-                <li><span class="glyphicon glyphicon-lock text-primary pull-left"></span>&nbsp;Aucune information personnelle ne vous est demandée et aucune des informations que vous aurez à saisir dans le cadre de ces paiements en ligne ne fera l’objet d’enregistrement.</li>
+                <li><span class="glyphicon glyphicon-lock text-primary pull-left"></span>&nbsp;Aucune information personnelle ne vous sera demandée et aucune des informations que vous aurez à saisir dans le cadre de ces paiements en ligne ne fera l’objet d’enregistrement.</li>
                 <li><span class="glyphicon glyphicon-envelope text-primary pull-left"></span>&nbsp;Un mail de confirmation de la transaction vous sera envoyé à l’adresse e-mail que vous aurez saisie dans le formulaire.</li>
                 <li><span class="glyphicon glyphicon-ok text-primary pull-left"></span>&nbsp;Dans certains cas, vous devrez paramétrer votre navigateur pour qu’il autorise les fenêtres pop-up. Voir les procédures pour votre navigateur</li>
             </ul>

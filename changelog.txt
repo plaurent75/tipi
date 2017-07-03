@@ -1,0 +1,20 @@
+== Changelog ==
+
+= 1.1.0 - 2017-07-03 =
+
+* Add - Allow to display content inside form from content editor page.
+* Add - faqs displayed on Tipi Form.
+* Add - Allow to define Invoices Type.
+* Add - Improved README.
+* Add - changelog.txt.
+* Add - Assets for Worpdress SVN repo.
+* Fix - missing translations.
+* Fix - Enqueue script and style only when needed.
+* New - Introduce "tipi_gateway_settings_options" filter.
+* New - Introduce "tipi_gateway_plugin_url" filter.
+* New - Introduce "tipi_gateway_public_template" filter.
+* New - Introduce "tipi_gateway_faq_template" filter.
+* New - Introduce "tipi_gateway_data_return" action hook.
+
+= 1.0.0 - 2017-07-01 =
+* Add - Initial release.

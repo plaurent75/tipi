@@ -9,7 +9,7 @@
  * that starts the plugin.
  *
  * @link              https://www.patricelaurent.net
- * @since             1.0.0
+ * @since             1.1.0
  * @package           Tipi
  *
  * @wordpress-plugin

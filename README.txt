@@ -1,13 +1,68 @@
-Comming Next :
+=== TIPI ===
+Contributors: eoni
+Donate link: http://www.patricelaurent.net
+Tags: credit card, ecommerce, e-commerce, mairie, city hall, collectivity
+Requires at least: 4.4
+Tested up to: 4.8
+Stable tag: 1.1.0
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-FAQs for your users
-Manage directly from wordpress dashboard your differents Kind of Invoices
+Tipi for Wordpress is a plugin allowing city hall and collectivities to integrate the TIPI payment gateway into their website, simply and efficiently
 
-filters :
-tipi_gateway_settings_options
-tipi_gateway_plugin_url
-tipi_gateway_public_template
-tipi_gateway_faq_template
+== Description ==
 
-Actions :
-tipi_gateway_data_return
+Allow people to pay their invoices with Visa, MasterCard and more cards directly from your website with the TIPI payment gateway.
+A test version is available online. You can access [the online demo](https://www.patricelaurent.net/tipi-demo/).
+
+= Offer Credit card payments easily and directly from your website =
+
+== Installation ==
+
+= Automatic installation =
+
+Automatic installation is the easiest option as WordPress handles the file transfers itself and you don’t need to leave your web browser.
+To do an automatic install of, log in to your WordPress dashboard, navigate to the Plugins menu and click Add New.
+
+In the search field type “tipi” and click Search Plugins. Once you’ve found our plugin you can view details about it such as the point release, rating and description. Most importantly of course, you can install it by simply clicking "Install Now".
+
+= Manual installation =
+
+The manual installation method involves downloading our plugin and uploading it to your web server via your favorite FTP application. The WordPress codex contains [instructions on how to do this here](http://codex.wordpress.org/Managing_Plugins#Manual_Plugin_Installation).
+
+= Updating =
+
+Automatic updates should work like a charm; as always though, ensure you backup your site just in case.
+
+== Screenshots ==
+
+1. The settings panel used to configure the gateway.
+2. Normal checkout with TIPI.
+3. The Front-end Faqs
+4. The Back-end Faqs
+5. The front-end selector for Invoice Type
+6. The back-end for Invoice Type
+7. The content from the Admin Editor
+
+== Changelog ==
+
+= 1.1.0 =
+
+* Add - Allow to display content inside form from content editor page.
+* Add - faqs displayed on Tipi Form.
+* Add - Allow to define Invoices Type.
+* Add - Improved README.
+* Add - changelog.txt.
+* Add - Assets for Worpdress SVN repo.
+* Fix - missing translations.
+* Fix - Enqueue script and style only when needed.
+* New - Introduce "tipi_gateway_settings_options" filter.
+* New - Introduce "tipi_gateway_plugin_url" filter.
+* New - Introduce "tipi_gateway_public_template" filter.
+* New - Introduce "tipi_gateway_faq_template" filter.
+* New - Introduce "tipi_gateway_data_return" action hook.
+
+= 1.0.0 =
+* Add - Initial release.
+
+[See changelog for all versions](https://raw.githubusercontent.com/plaurent75/tipi/master/changelog.txt).

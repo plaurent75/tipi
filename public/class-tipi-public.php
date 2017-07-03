@@ -77,17 +77,21 @@ class Tipi_Public {
 		 * between the defined hooks and the functions defined in this
 		 * class.
 		 */
-		if(!array_key_exists('bootstrap_3',$this->tipi_gateway_settings_options) || 'Yes' !== $this->tipi_gateway_settings_options['bootstrap_3']) {
-			wp_enqueue_style( $this->plugin_name,
-				plugin_dir_url( __FILE__ ) . 'css/tipi-public.css',
-				array(),
-				$this->version,
-				'all' );
-			wp_enqueue_style( $this->plugin_name . '_bs3',
-				plugin_dir_url( __FILE__ ) . 'css/bootstrap.min.css',
-				array(),
-				$this->version,
-				'all' );
+		if($this->is_tipi_page()) {
+			if ( ! array_key_exists( 'bootstrap_3',
+					$this->tipi_gateway_settings_options ) || 'Yes' !== $this->tipi_gateway_settings_options['bootstrap_3']
+			) {
+				wp_enqueue_style( $this->plugin_name,
+					plugin_dir_url( __FILE__ ) . 'css/tipi-public.css',
+					array(),
+					$this->version,
+					'all' );
+				wp_enqueue_style( $this->plugin_name . '_bs3',
+					plugin_dir_url( __FILE__ ) . 'css/bootstrap.min.css',
+					array(),
+					$this->version,
+					'all' );
+			}
 		}
 
 	}
@@ -110,10 +114,23 @@ class Tipi_Public {
 		 * between the defined hooks and the functions defined in this
 		 * class.
 		 */
-		wp_enqueue_script( $this->plugin_name.'-bsjs', plugin_dir_url( __FILE__ ) . 'js/bootstrap.min.js', array( 'jquery' ), $this->version, true );
-		wp_enqueue_script( $this->plugin_name.'-validator', plugin_dir_url( __FILE__ ) . 'js/validator.js', array( 'jquery',$this->plugin_name.'-bsjs' ), $this->version, true );
-		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/tipi-public.js', array( 'jquery',$this->plugin_name.'-validator' ), $this->version, true );
-
+		if($this->is_tipi_page()) {
+			wp_enqueue_script( $this->plugin_name . '-bsjs',
+				plugin_dir_url( __FILE__ ) . 'js/bootstrap.min.js',
+				array( 'jquery' ),
+				$this->version,
+				true );
+			wp_enqueue_script( $this->plugin_name . '-validator',
+				plugin_dir_url( __FILE__ ) . 'js/validator.js',
+				array( 'jquery', $this->plugin_name . '-bsjs' ),
+				$this->version,
+				true );
+			wp_enqueue_script( $this->plugin_name,
+				plugin_dir_url( __FILE__ ) . 'js/tipi-public.js',
+				array( 'jquery', $this->plugin_name . '-validator' ),
+				$this->version,
+				true );
+		}
 	}
 
 	public function is_tipi_page(){
