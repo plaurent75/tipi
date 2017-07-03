@@ -6,8 +6,8 @@ if ( $loop->have_posts() ) {
     <div class="form-group">
         <label class="control-label col-sm-2">Type</label>
         <div class="col-sm-10">
-            <select class="form-control" name="objet" id="objet">
-                <option value="">Choisir un type</option>
+            <select class="form-control" name="objet" id="objet" data-validate="true" required="required">
+                <option value="" selected disabled>Choisir un type</option>
 				<?php
 
 				while ( $loop->have_posts() ) {

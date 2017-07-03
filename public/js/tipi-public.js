@@ -29,11 +29,10 @@
     var curStep = $(this).closest(".setup-content"),
       curStepBtn = curStep.attr("id"),
       nextStepWizard = $('div.setup-panel div a[href="#' + curStepBtn + '"]').parent().next().children("a"),
-      curInputs = curStep.find("input[type='text'],input[type='email'],input[type='url']"),
+      curInputs = curStep.find("input[type='text'],input[type='email'],input[type='url'],select"),
       isValid = true;
     $(".form-group").removeClass("has-error");
     for(var i=0; i<curInputs.length; i++){
-    	console.log(curInputs[i].validity.valid);
       if (!curInputs[i].validity.valid){
         isValid = false;
         $(curInputs[i]).closest(".form-group").addClass("has-error");
@@ -65,7 +64,7 @@
   $('#openBtn').click(function () {
 
 		/*
-		 Modal Paiement
+		 Popup Paiement
 		 montant exprimé en centimes, pas de virgule
 		 */
 		var widthPop = 900;
@@ -85,16 +84,7 @@
 		var topPosition = (window.screen.height / 2) - ((heightPop / 2) + 50);
     var frameurl = 'https://www.tipi.budget.gouv.fr/tpa/paiement.web?numcli='+numcli+'&exer='+exer+'&refdet='+refdet+'&objet='+objet+'&montant='+somme+'&mel='+mailperso+'&saisie='+saisie+'&urlcl='+urlcl+'';
 
-
-
     window.open(frameurl, '_blank','height=' + heightPop +', width=' + widthPop +', toolbar=no, menubar=no, scrollbars=no, resizable=yes, location=no, directories=no, status=no,left='
       + leftPosition + ',top=' + topPosition + ',screenX=' + leftPosition + ',screenY=' + topPosition +'');
-    /*$.ajax({
-      type: 'POST',
-      //url: '/echo/json/',
-      success: function (data) {
-        redirectWindow.location;
-      }
-    });*/
   });
 })( jQuery );
