@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Tipi\n"
-"POT-Creation-Date: 2017-07-02 13:48+0200\n"
-"PO-Revision-Date: 2017-07-02 13:49+0200\n"
+"POT-Creation-Date: 2017-07-03 11:43+0200\n"
+"PO-Revision-Date: 2017-07-03 11:47+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -21,49 +21,121 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#: admin/class-tipi-admin.php:111 admin/class-tipi-admin.php:112
+#: admin/class-tipi-admin.php:120 admin/class-tipi-admin.php:121
 msgid "TIPI Gateway"
 msgstr "Paiement TIPI"
 
-#: admin/class-tipi-admin.php:138
+#: admin/class-tipi-admin.php:147
 msgid "Settings"
 msgstr ""
 
-#: admin/class-tipi-admin.php:145
+#: admin/class-tipi-admin.php:154
 msgid "Enter Your Tipi Client Number"
 msgstr "Entrez votre numéro de client TIPI"
 
-#: admin/class-tipi-admin.php:153
+#: admin/class-tipi-admin.php:162
 msgid "Input Mode"
 msgstr "Mode de saisie"
 
-#: admin/class-tipi-admin.php:161
+#: admin/class-tipi-admin.php:170
 msgid "Where to display it ?"
 msgstr "Choisir la page où afficher le formulaire"
 
-#: admin/class-tipi-admin.php:168
+#: admin/class-tipi-admin.php:177
 msgid "Disable plugin css style?"
 msgstr "Désactiver les styles (fichiers CSS) du plugin?"
 
-#: admin/class-tipi-admin.php:220
+#: admin/class-tipi-admin.php:238
 msgid "&mdash; Select &mdash;"
 msgstr ""
 
-#: admin/class-tipi-admin.php:226
+#: admin/class-tipi-admin.php:244
 msgid "Show"
 msgstr ""
 
-#: admin/class-tipi-admin.php:228
+#: admin/class-tipi-admin.php:246
 msgid "Add New Page"
 msgstr ""
 
-#: admin/class-tipi-admin.php:236
+#: admin/class-tipi-admin.php:257
 msgid "Yes"
 msgstr ""
 
-#: admin/class-tipi-admin.php:238
+#: admin/class-tipi-admin.php:260
 msgid "No"
 msgstr ""
+
+#: admin/class-tipi-admin.php:267
+msgctxt "Post Type General Name"
+msgid "Tipi FAQs"
+msgstr "FAQs TIPI"
+
+#: admin/class-tipi-admin.php:268
+msgctxt "Post Type Singular Name"
+msgid "Tipi FAQ"
+msgstr "FAQ Tipi"
+
+#: admin/class-tipi-admin.php:269
+msgid "Tipi Faqs"
+msgstr "FAQs TIPI"
+
+#: admin/class-tipi-admin.php:270
+msgid "Faq Tipi"
+msgstr "FAQ Tipi"
+
+#: admin/class-tipi-admin.php:271
+msgid "Tipi Faq Archives"
+msgstr "Archive TIPI Faq"
+
+#: admin/class-tipi-admin.php:272
+msgid "All Tipi Faqs"
+msgstr "Toutes les FAQs TIPI"
+
+#: admin/class-tipi-admin.php:273
+msgid "Add a FAQ"
+msgstr "Ajouter une FAQ Tipi"
+
+#: admin/class-tipi-admin.php:277
+msgid "Tipi FAQ"
+msgstr "FAQ Tipi"
+
+#: admin/class-tipi-admin.php:278
+msgid "Manage Tipi Faq"
+msgstr "Gérer FAQ TIPI"
+
+#: admin/class-tipi-admin.php:302
+msgctxt "Post Type General Name"
+msgid "Invoices Types"
+msgstr "Types de factures"
+
+#: admin/class-tipi-admin.php:303
+msgctxt "Post Type Singular Name"
+msgid "Invoices Type"
+msgstr "Type de Facture"
+
+#: admin/class-tipi-admin.php:304
+msgid "Tipi Invoices Types"
+msgstr "Types de factures TIPI"
+
+#: admin/class-tipi-admin.php:305
+msgid "Invoices Types"
+msgstr "Types de factures"
+
+#: admin/class-tipi-admin.php:308
+msgid "Invoices Type"
+msgstr "Type de Facture"
+
+#: admin/class-tipi-admin.php:309
+msgid "Custom Invoices Types"
+msgstr ""
+
+#: admin/class-tipi-admin.php:336 admin/class-tipi-admin.php:347
+msgid "Reference"
+msgstr "Référence"
+
+#: admin/class-tipi-admin.php:346
+msgid "Internal Reference"
+msgstr "Référence interne:"
 
 #: admin/partials/tipi-admin-display.php:18
 msgid "TIPI Gateway Settings"
@@ -73,13 +145,25 @@ msgstr "Paramètres de la passerelle de paiement TIPI"
 msgid "Enter your settings here to use the TIPI Gateway"
 msgstr "Entrez vos paramètres ici pour utiliser la passerelle de paiement TIPI"
 
+#: public/partials/faq.php:4
+msgid "Help and frequently asked questions"
+msgstr ""
+
+#: public/partials/objet-type.php:7
+msgid "Type"
+msgstr "Type"
+
+#: public/partials/objet-type.php:10
+msgid "Choose a type"
+msgstr "Choisissez un type"
+
 #. Plugin Name of the plugin/theme
 msgid "Tipi"
 msgstr "Tipi"
 
 #. Plugin URI of the plugin/theme
-#. Author URI of the plugin/theme
-msgid "https://www.patricelaurent.net"
+msgid ""
+"https://www.patricelaurent.net/portfolio/e-commerce/tipi-pour-wordpress/"
 msgstr ""
 
 #. Description of the plugin/theme
@@ -93,4 +177,8 @@ msgstr ""
 
 #. Author of the plugin/theme
 msgid "Patrice LAURENT"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://www.patricelaurent.net"
 msgstr ""
