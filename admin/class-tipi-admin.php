@@ -238,4 +238,39 @@ class Tipi_Admin {
 			<label for="bootstrap_3-1"><input type="radio" name="tipi_gateway_settings_option_name[bootstrap_3]" id="bootstrap_3-1" value="No" <?php echo $checked; ?>> <?php _e('No') ?></label></fieldset> <?php
 	}
 
+	public function custom_tipi_faq() {
+
+		$labels = array(
+			'name'                  => _x( 'Tipi FAQs', 'Post Type General Name', 'tipi' ),
+			'singular_name'         => _x( 'Tipi FAQ', 'Post Type Singular Name', 'tipi' ),
+			'menu_name'             => __( 'Tipi Faqs', 'tipi' ),
+			'name_admin_bar'        => __( 'Faq Tipi', 'tipi' ),
+			'archives'              => __( 'Tipi Faq Archives', 'tipi' ),
+			'all_items'             => __( 'All Tipi Faqs', 'tipi' ),
+			'add_new_item'          => __( 'Add a FAQ', 'tipi' ),
+
+		);
+		$args = array(
+			'label'                 => __( 'Tipi FAQ', 'bbz-tipi' ),
+			'description'           => __( 'Gestion de la FAQ de Tipi', 'bbz-tipi' ),
+			'labels'                => $labels,
+			'supports'              => array( 'title', 'editor', 'page-attributes', ),
+			'hierarchical'          => true,
+			'public'                => false,
+			'show_ui'               => true,
+			'show_in_menu'          => true,
+			'menu_position'         => 5,
+			'menu_icon'             => 'dashicons-format-chat',
+			'show_in_admin_bar'     => false,
+			'show_in_nav_menus'     => false,
+			'can_export'            => true,
+			'has_archive'           => false,
+			'exclude_from_search'   => true,
+			'publicly_queryable'    => true,
+			'capability_type'       => 'page',
+		);
+		register_post_type( 'tipi_faq', $args );
+
+	}
+
 }

@@ -149,5 +149,8 @@ if($this->tipi_gateway_settings_options['input_mode_1']=='T'){
         <button id="openBtn" class="btn btn-success btn-lg center-block" type="button"><span class="glyphicon glyphicon-credit-card"></span> Paiement en ligne</button>
     </div>
 </div>
-<?php //include_once 'faq.php'; ?>
+<?php
+$templateFaqFile = apply_filters('tipi_gateway_faq_template','partials/faq.php');
+include_once $templateFaqFile;
+?>
 </div>

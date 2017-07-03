@@ -160,6 +160,7 @@ class Tipi {
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_scripts' );
 		$this->loader->add_action( 'admin_menu',$plugin_admin, 'add_menu_tipi' );
 		$this->loader->add_action( 'admin_init',$plugin_admin, 'tipi_settings_init' );
+		$this->loader->add_action( 'init', $plugin_admin, 'custom_tipi_faq' );
 
 	}
 
