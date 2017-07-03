@@ -161,7 +161,9 @@ class Tipi {
 		$this->loader->add_action( 'admin_menu',$plugin_admin, 'add_menu_tipi' );
 		$this->loader->add_action( 'admin_init',$plugin_admin, 'tipi_settings_init' );
 		$this->loader->add_action( 'init', $plugin_admin, 'custom_tipi_faq' );
-
+		$this->loader->add_action( 'init', $plugin_admin, 'custom_tipi_objet' );
+		$this->loader->add_action( 'add_meta_boxes', $plugin_admin, 'add_meta_boxes'  );
+		$this->loader->add_action( 'save_post', $plugin_admin,'save_post' );
 	}
 
 	/**
