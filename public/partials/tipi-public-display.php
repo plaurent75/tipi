@@ -82,7 +82,7 @@ if($this->tipi_gateway_settings_options['input_mode_1']=='T'){
     <div class="setup-content" id="step-2">
     <h3 class="text-center"> Informations</h3>
 
-		<?php //include_once 'objet-type.php' ?>
+		<?php include_once 'objet-type.php' ?>
 
         <div class="form-group">
             <label class="control-label col-sm-2">N° de Titre</label>
@@ -150,7 +150,7 @@ if($this->tipi_gateway_settings_options['input_mode_1']=='T'){
     </div>
 </div>
 <?php
-$templateFaqFile = apply_filters('tipi_gateway_faq_template','partials/faq.php');
+$templateFaqFile = apply_filters('tipi_gateway_faq_template','faq.php');
 include_once $templateFaqFile;
 ?>
 </div>
