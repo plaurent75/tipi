@@ -11,6 +11,7 @@
  * @package    Tipi
  * @subpackage Tipi/public/partials
  */
+global $post;
 if(!isset($this->tipi_gateway_settings_options['input_mode_1'])) $this->tipi_gateway_settings_options['input_mode_1']='T';
 ?>
 <div id="tipi-gateway">
@@ -59,6 +60,9 @@ if($this->tipi_gateway_settings_options['input_mode_1']=='T'){
 ?>
 <!-- This file should primarily consist of HTML with a little bit of PHP. -->
 <div class="setup-content" id="step-1">
+    <?php if (!$this->empty_content($post->post_content)) {
+        echo apply_filters('wpautop', get_the_content($post->ID));
+    }else{ ?>
         <h3>Munissez-vous de votre avis des sommes à payer dont vous souhaitez effectuer le paiement.</h3>
         <p>Disponible 24h/24h et 7j/7, ce mode de paiement, proposé par la Direction générale des finances publiques, est simple et sécurisé.</p>
         <div class="well">
@@ -75,6 +79,7 @@ if($this->tipi_gateway_settings_options['input_mode_1']=='T'){
                 <li><span class="glyphicon glyphicon-ok text-primary pull-left"></span>&nbsp;Dans certains cas, vous devrez paramétrer votre navigateur pour qu’il autorise les fenêtres pop-up. Voir les procédures pour votre navigateur</li>
             </ul>
         </div>
+    <?php } ?>
         <button class="btn btn-primary nextBtn btn-lg pull-right" type="button" >Suivant <span class="glyphicon glyphicon-chevron-right"></span></button>
 </div>
     <form role="form" method="post" class="form-horizontal"  data-toggle="validator" id="tipi_calipsu">

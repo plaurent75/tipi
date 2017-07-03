@@ -116,15 +116,28 @@ class Tipi_Public {
 
 	}
 
-	public function insert_tipi_content( $content ) {
+	public function is_tipi_page(){
+		if ( array_key_exists('where_to_display_it_2',$this->tipi_gateway_settings_options) && is_page($this->tipi_gateway_settings_options['where_to_display_it_2']) ) return true;
+		else return false;
+	}
 
-		$current = isset($this->tipi_gateway_settings_options['where_to_display_it_2']) ? $this->tipi_gateway_settings_options['where_to_display_it_2'] : 0;
-		if ( $current > 0 && is_page($current) ) {
+	public function insert_tipi_content( $content ) {
+		if ( $this->is_tipi_page() && $this->tipi_gateway_settings_options['where_to_display_it_2'] == get_the_ID() ) {
 			$templateFile = apply_filters('tipi_gateway_public_template','partials/tipi-public-display.php');
 			include_once $templateFile;
+			return null;
 		}
+			return $content;
+	}
 
-		return $content;
+	/**
+	 * Check if content is empty
+	 * @param $str
+	 *
+	 * @return bool
+	 */
+	public function empty_content($str) {
+		return trim(str_replace('&nbsp;','',strip_tags($str))) == '';
 	}
 
 }
