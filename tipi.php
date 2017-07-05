@@ -9,14 +9,14 @@
  * that starts the plugin.
  *
  * @link              https://www.patricelaurent.net
- * @since             1.1.0
+ * @since             1.0.0
  * @package           Tipi
  *
  * @wordpress-plugin
  * Plugin Name:       Tipi
  * Plugin URI:        https://www.patricelaurent.net/portfolio/e-commerce/tipi-pour-wordpress/
  * Description:       This plugin allow you tu use the TIPI Gateway allowing people to pay by credit card dierctly from your site.
- * Version:           1.0.0
+ * Version:           1.1.1
  * Author:            Patrice LAURENT
  * Author URI:        https://www.patricelaurent.net
  * License:           GPL-2.0+

@@ -1,10 +1,11 @@
 === TIPI ===
+
 Contributors: eoni
-Donate link: http://www.patricelaurent.net
+Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=PC7ZCMRQ79AD6
 Tags: credit card, ecommerce, e-commerce, mairie, city hall, collectivity
 Requires at least: 4.4
 Tested up to: 4.8
-Stable tag: 1.1.0
+Stable tag: 1.1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -18,6 +19,8 @@ A test version is available online. You can access [the online demo](https://www
 = Offer Credit card payments easily and directly from your website =
 
 == Installation ==
+
+Information and Documentation available on the [official Website] (https://www.patricelaurent.net/portfolio/e-commerce/tipi-pour-wordpress/)
 
 = Automatic installation =
 

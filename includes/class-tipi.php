@@ -73,7 +73,7 @@ class Tipi {
 	public function __construct() {
 
 		$this->plugin_name = 'tipi';
-		$this->version = '1.1.0';
+		$this->version = '1.1.1';
 		$this->tipi_gateway_settings_options = apply_filters('tipi_gateway_settings_options',get_option( 'tipi_gateway_settings_option_name' ));
 		$this->tipi_plugin_url = apply_filters('tipi_gateway_plugin_url',plugin_dir_url(dirname(__FILE__)));
 		$this->load_dependencies();
