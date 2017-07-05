@@ -66,18 +66,8 @@ class Tipi_Public {
 	 */
 	public function enqueue_styles() {
 
-		/**
-		 * This function is provided for demonstration purposes only.
-		 *
-		 * An instance of this class should be passed to the run() function
-		 * defined in Tipi_Loader as all of the hooks are defined
-		 * in that particular class.
-		 *
-		 * The Tipi_Loader will then create the relationship
-		 * between the defined hooks and the functions defined in this
-		 * class.
-		 */
 		if($this->is_tipi_page()) {
+			// Include CSS if no choice have been made (eg. first install) or if the user have not disable it from the admin
 			if ( ! array_key_exists( 'bootstrap_3',
 					$this->tipi_gateway_settings_options ) || 'Yes' !== $this->tipi_gateway_settings_options['bootstrap_3']
 			) {
@@ -103,17 +93,6 @@ class Tipi_Public {
 	 */
 	public function enqueue_scripts() {
 
-		/**
-		 * This function is provided for demonstration purposes only.
-		 *
-		 * An instance of this class should be passed to the run() function
-		 * defined in Tipi_Loader as all of the hooks are defined
-		 * in that particular class.
-		 *
-		 * The Tipi_Loader will then create the relationship
-		 * between the defined hooks and the functions defined in this
-		 * class.
-		 */
 		if($this->is_tipi_page()) {
 			wp_enqueue_script( $this->plugin_name . '-bsjs',
 				plugin_dir_url( __FILE__ ) . 'js/bootstrap.min.js',

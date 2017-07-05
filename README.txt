@@ -5,7 +5,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: credit card, ecommerce, e-commerce, mairie, city hall, collectivity
 Requires at least: 4.4
 Tested up to: 4.8
-Stable tag: 1.1.2
+Stable tag: 1.1.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -16,11 +16,12 @@ Tipi for Wordpress is a plugin allowing city hall and collectivities to integrat
 Allow people to pay their invoices with Visa, MasterCard and more cards directly from your website with the TIPI payment gateway.
 A test version is available online. You can access [the online demo](https://www.patricelaurent.net/tipi-demo/).
 
+Information and Documentation available on the [official Website](https://www.patricelaurent.net/portfolio/e-commerce/tipi-pour-wordpress/).
+
 = Offer Credit card payments easily and directly from your website =
 
 == Installation ==
 
-Information and Documentation available on the [official Website] (https://www.patricelaurent.net/portfolio/e-commerce/tipi-pour-wordpress/)
 
 = Automatic installation =
 
@@ -48,6 +49,11 @@ Automatic updates should work like a charm; as always though, ensure you backup 
 7. The content from the Admin Editor
 
 == Changelog ==
+
+= 1.1.3 =
+
+* Add -  add additional links below the plugin on the plugins page
+* Add -  Better design for admin option page
 
 = 1.1.2 =
 

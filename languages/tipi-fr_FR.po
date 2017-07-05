@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Tipi\n"
-"POT-Creation-Date: 2017-07-03 12:53+0200\n"
-"PO-Revision-Date: 2017-07-03 12:54+0200\n"
+"POT-Creation-Date: 2017-07-05 14:22+0200\n"
+"PO-Revision-Date: 2017-07-05 14:23+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -21,129 +21,137 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#: admin/class-tipi-admin.php:120 admin/class-tipi-admin.php:121
+#: admin/class-tipi-admin.php:96 admin/class-tipi-admin.php:97
 msgid "TIPI Gateway"
 msgstr "Paiement TIPI"
 
-#: admin/class-tipi-admin.php:147
-msgid "Settings"
-msgstr ""
-
-#: admin/class-tipi-admin.php:154
+#: admin/class-tipi-admin.php:130
 msgid "Enter Your Tipi Client Number"
 msgstr "Entrez votre numéro de client TIPI"
 
-#: admin/class-tipi-admin.php:162
+#: admin/class-tipi-admin.php:138
 msgid "Input Mode"
 msgstr "Mode de saisie"
 
-#: admin/class-tipi-admin.php:170
+#: admin/class-tipi-admin.php:146
 msgid "Where to display it ?"
 msgstr "Choisir la page où afficher le formulaire"
 
-#: admin/class-tipi-admin.php:177
+#: admin/class-tipi-admin.php:153
 msgid "Disable plugin css style?"
 msgstr "Désactiver les styles (fichiers CSS) du plugin?"
 
-#: admin/class-tipi-admin.php:238
+#: admin/class-tipi-admin.php:162 admin/class-tipi-admin.php:378
+msgid "Settings"
+msgstr "Réglages"
+
+#: admin/class-tipi-admin.php:220
 msgid "&mdash; Select &mdash;"
-msgstr ""
+msgstr "&mdash; Sélectionnez &mdash;"
 
-#: admin/class-tipi-admin.php:244
+#: admin/class-tipi-admin.php:226
 msgid "Show"
-msgstr ""
+msgstr "Afficher"
 
-#: admin/class-tipi-admin.php:246
+#: admin/class-tipi-admin.php:228
 msgid "Add New Page"
-msgstr ""
+msgstr "Ajouter une nouvelle Page"
 
-#: admin/class-tipi-admin.php:257
+#: admin/class-tipi-admin.php:239
 msgid "Yes"
-msgstr ""
+msgstr "Oui"
 
-#: admin/class-tipi-admin.php:260
+#: admin/class-tipi-admin.php:242
 msgid "No"
-msgstr ""
+msgstr "Non"
 
-#: admin/class-tipi-admin.php:267
+#: admin/class-tipi-admin.php:249
 msgctxt "Post Type General Name"
 msgid "Tipi FAQs"
 msgstr "FAQs TIPI"
 
-#: admin/class-tipi-admin.php:268
+#: admin/class-tipi-admin.php:250
 msgctxt "Post Type Singular Name"
 msgid "Tipi FAQ"
 msgstr "FAQ Tipi"
 
-#: admin/class-tipi-admin.php:269
+#: admin/class-tipi-admin.php:251
 msgid "Tipi Faqs"
 msgstr "FAQs TIPI"
 
-#: admin/class-tipi-admin.php:270
+#: admin/class-tipi-admin.php:252
 msgid "Faq Tipi"
 msgstr "FAQ Tipi"
 
-#: admin/class-tipi-admin.php:271
+#: admin/class-tipi-admin.php:253
 msgid "Tipi Faq Archives"
 msgstr "Archive TIPI Faq"
 
-#: admin/class-tipi-admin.php:272
+#: admin/class-tipi-admin.php:254
 msgid "All Tipi Faqs"
 msgstr "Toutes les FAQs TIPI"
 
-#: admin/class-tipi-admin.php:273
+#: admin/class-tipi-admin.php:255
 msgid "Add a FAQ"
 msgstr "Ajouter une FAQ Tipi"
 
-#: admin/class-tipi-admin.php:277
+#: admin/class-tipi-admin.php:259
 msgid "Tipi FAQ"
 msgstr "FAQ Tipi"
 
-#: admin/class-tipi-admin.php:278
+#: admin/class-tipi-admin.php:260
 msgid "Manage Tipi Faq"
 msgstr "Gérer FAQ TIPI"
 
-#: admin/class-tipi-admin.php:302
+#: admin/class-tipi-admin.php:284
 msgctxt "Post Type General Name"
 msgid "Invoices Types"
 msgstr "Types de factures"
 
-#: admin/class-tipi-admin.php:303
+#: admin/class-tipi-admin.php:285
 msgctxt "Post Type Singular Name"
 msgid "Invoices Type"
 msgstr "Type de Facture"
 
-#: admin/class-tipi-admin.php:304
+#: admin/class-tipi-admin.php:286
 msgid "Tipi Invoices Types"
 msgstr "Types de factures TIPI"
 
-#: admin/class-tipi-admin.php:305
+#: admin/class-tipi-admin.php:287
 msgid "Invoices Types"
 msgstr "Types de factures"
 
-#: admin/class-tipi-admin.php:308
+#: admin/class-tipi-admin.php:288
+msgid "Add invoice type"
+msgstr "Ajouter un type de facture"
+
+#: admin/class-tipi-admin.php:291
 msgid "Invoices Type"
 msgstr "Type de Facture"
 
-#: admin/class-tipi-admin.php:309
+#: admin/class-tipi-admin.php:292
 msgid "Custom Invoices Types"
-msgstr ""
+msgstr "Ajouter un type de titre de paiement"
 
-#: admin/class-tipi-admin.php:336 admin/class-tipi-admin.php:347
+#: admin/class-tipi-admin.php:319 admin/class-tipi-admin.php:330
 msgid "Reference"
 msgstr "Référence"
 
-#: admin/class-tipi-admin.php:346
+#: admin/class-tipi-admin.php:329
 msgid "Internal Reference"
 msgstr "Référence interne:"
 
-#: admin/partials/tipi-admin-display.php:18
+#: admin/class-tipi-admin.php:379
+msgid "Donate"
+msgstr "Faire un Don"
+
+#: admin/partials/tipi-admin-display.php:17
 msgid "TIPI Gateway Settings"
 msgstr "Paramètres de la passerelle de paiement TIPI"
 
-#: admin/partials/tipi-admin-display.php:19
-msgid "Enter your settings here to use the TIPI Gateway"
-msgstr "Entrez vos paramètres ici pour utiliser la passerelle de paiement TIPI"
+#: admin/partials/tipi-admin-display.php:23
+msgid "About"
+msgstr "À propos"
 
 #: public/partials/faq.php:4
 msgid "Help and frequently asked questions"
@@ -165,6 +173,7 @@ msgstr "Tipi"
 msgid ""
 "https://www.patricelaurent.net/portfolio/e-commerce/tipi-pour-wordpress/"
 msgstr ""
+"https://www.patricelaurent.net/portfolio/e-commerce/tipi-pour-wordpress/"
 
 #. Description of the plugin/theme
 msgid ""
@@ -177,8 +186,12 @@ msgstr ""
 
 #. Author of the plugin/theme
 msgid "Patrice LAURENT"
-msgstr ""
+msgstr "Patrice LAURENT"
 
 #. Author URI of the plugin/theme
 msgid "https://www.patricelaurent.net"
-msgstr ""
+msgstr "https://www.patricelaurent.net"
+
+#~ msgid "Enter your settings here to use the TIPI Gateway"
+#~ msgstr ""
+#~ "Entrez vos paramètres ici pour utiliser la passerelle de paiement TIPI"

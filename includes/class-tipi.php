@@ -73,7 +73,7 @@ class Tipi {
 	public function __construct() {
 
 		$this->plugin_name = 'tipi';
-		$this->version = '1.1.2';
+		$this->version = '1.1.3';
 		$this->tipi_gateway_settings_options = apply_filters('tipi_gateway_settings_options',get_option( 'tipi_gateway_settings_option_name' ));
 		$this->tipi_plugin_url = apply_filters('tipi_gateway_plugin_url',plugin_dir_url(dirname(__FILE__)));
 		$this->load_dependencies();
@@ -164,6 +164,7 @@ class Tipi {
 		$this->loader->add_action( 'init', $plugin_admin, 'custom_tipi_objet' );
 		$this->loader->add_action( 'add_meta_boxes', $plugin_admin, 'add_meta_boxes'  );
 		$this->loader->add_action( 'save_post', $plugin_admin,'save_post' );
+		$this->loader->add_action( 'plugin_row_meta', $plugin_admin,'custom_admin_link',10,2);
 	}
 
 	/**

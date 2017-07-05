@@ -65,18 +65,6 @@ class Tipi_Admin {
 	 */
 	public function enqueue_styles() {
 
-		/**
-		 * This function is provided for demonstration purposes only.
-		 *
-		 * An instance of this class should be passed to the run() function
-		 * defined in Tipi_Loader as all of the hooks are defined
-		 * in that particular class.
-		 *
-		 * The Tipi_Loader will then create the relationship
-		 * between the defined hooks and the functions defined in this
-		 * class.
-		 */
-
 		wp_enqueue_style( $this->plugin_name,
 			plugin_dir_url( __FILE__ ) . 'css/tipi-admin.css',
 			array(),
@@ -91,18 +79,6 @@ class Tipi_Admin {
 	 * @since    1.0.0
 	 */
 	public function enqueue_scripts() {
-
-		/**
-		 * This function is provided for demonstration purposes only.
-		 *
-		 * An instance of this class should be passed to the run() function
-		 * defined in Tipi_Loader as all of the hooks are defined
-		 * in that particular class.
-		 *
-		 * The Tipi_Loader will then create the relationship
-		 * between the defined hooks and the functions defined in this
-		 * class.
-		 */
 
 		wp_enqueue_script( $this->plugin_name,
 			plugin_dir_url( __FILE__ ) . 'js/tipi-admin.js',
@@ -144,8 +120,8 @@ class Tipi_Admin {
 
 		add_settings_section(
 			'tipi_gateway_settings_setting_section', // id
-			__( 'Settings' ), // title
-			null, // callback
+			null, // title
+			array($this, 'wp_tipi_callback_section'), // callback
 			'tipi-gateway-settings-admin' // page
 		);
 
@@ -180,6 +156,12 @@ class Tipi_Admin {
 			'tipi_gateway_settings_setting_section' // section
 		);
 	}
+
+	public function wp_tipi_callback_section(){
+	    ?>
+        <h3 class="hndle"><span><?php _e('Settings') ?></span></h3>
+        <?php
+    }
 
 	public function tipi_gateway_settings_sanitize( $input ) {
 		$sanitary_values = array();
@@ -251,11 +233,11 @@ class Tipi_Admin {
 
 	public function bootstrap_3_callback() {
 		?>
-        <fieldset><?php $checked = ( isset( $this->tipi_gateway_settings_options['bootstrap_3'] ) && $this->tipi_gateway_settings_options['bootstrap_3'] === 'Yes' ) ? 'checked' : ''; ?>
+        <fieldset><?php $checked = ( isset( $this->tipi_gateway_settings_options['bootstrap_3'] ) && 'Yes' === $this->tipi_gateway_settings_options['bootstrap_3'] ) ? 'checked' : ''; ?>
             <label for="bootstrap_3-0"><input type="radio" name="tipi_gateway_settings_option_name[bootstrap_3]"
                                               id="bootstrap_3-0"
                                               value="Yes" <?php echo $checked; ?>> <?php _e( 'Yes' ) ?></label><br>
-			<?php $checked = ( isset( $this->tipi_gateway_settings_options['bootstrap_3'] ) && $this->tipi_gateway_settings_options['bootstrap_3'] === 'No' ) ? 'checked' : ''; ?>
+			<?php $checked = ( !array_key_exists('bootstrap_3',$this->tipi_gateway_settings_options) || 'No' === $this->tipi_gateway_settings_options['bootstrap_3']  ) ? 'checked' : ''; ?>
             <label for="bootstrap_3-1"><input type="radio" name="tipi_gateway_settings_option_name[bootstrap_3]"
                                               id="bootstrap_3-1" value="No" <?php echo $checked; ?>> <?php _e( 'No' ) ?>
             </label></fieldset> <?php
@@ -303,6 +285,7 @@ class Tipi_Admin {
 			'singular_name'  => _x( 'Invoices Type', 'Post Type Singular Name', 'tipi' ),
 			'menu_name'      => __( 'Tipi Invoices Types', 'tipi' ),
 			'name_admin_bar' => __( 'Invoices Types', 'tipi' ),
+			'add_new_item'   => __( 'Add invoice type', 'tipi' ),
 		);
 		$args   = array(
 			'label'               => __( 'Invoices Type', 'tipi' ),
@@ -380,6 +363,22 @@ class Tipi_Admin {
 			$tipi_reference = sanitize_text_field( $_POST['reference'] );
 			update_post_meta( $post_id, 'reference_reference', $tipi_reference );
 		}
+	}
+
+	/**
+     * Registers additional links for the plugin on the WP plugin configuration page
+     *
+	 * @param $links
+	 * @param $file
+	 *
+	 * @return array
+	 */
+	public static function custom_admin_link($links, $file) {
+	    if($file === get_wp_tipi_basename()){
+		    $links[] = '<a href="'.admin_url('admin.php?page=tipi-gateway-settings').'">' . __('Settings') . '</a>';
+		    $links[] = '<a target="_blank" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=PC7ZCMRQ79AD6">' . __('Donate', 'tipi') . '</a>';
+        }
+		return $links;
 	}
 
 }
