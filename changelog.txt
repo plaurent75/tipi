@@ -1,5 +1,9 @@
 == Changelog ==
 
+= 1.1.2 =
+
+* Fix - php syntax error
+
 = 1.1.0 - 2017-07-03 =
 
 * Add - Allow to display content inside form from content editor page.
