@@ -8,6 +8,8 @@ Tested up to: 4.8
 Stable tag: 1.1.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Author URI: https://www.patricelaurent.net
+Plugin URI: https://www.patricelaurent.net/portfolio/e-commerce/tipi-pour-wordpress/
 
 Tipi for Wordpress is a plugin allowing city hall and collectivities to integrate the TIPI payment gateway into their website, simply and efficiently
 
@@ -49,6 +51,10 @@ Automatic updates should work like a charm; as always though, ensure you backup 
 7. The content from the Admin Editor
 
 == Changelog ==
+
+= 1.1.4 =
+
+* Fix -  Bad french translation filename
 
 = 1.1.3 =
 
