@@ -30,7 +30,11 @@ class Tipi_Activator {
 	 * @since    1.0.0
 	 */
 	public static function activate() {
-
+		$default = array(
+			'bootstrap_3'     => 'No',
+			'input_mode_1'   => 'T'
+		);
+		update_option( 'tipi_gateway_settings_option_name', $default );
 	}
 
 }

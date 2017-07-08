@@ -1,5 +1,9 @@
 == Changelog ==
 
+= 1.1.6 - 2017-07-08 =
+
+* Add -  Set default option on activate plugin
+
 = 1.1.5 - 2017-07-08 =
 
 * Fix -  Bad french translation filename

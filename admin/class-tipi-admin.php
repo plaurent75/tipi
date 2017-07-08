@@ -219,7 +219,7 @@ class Tipi_Admin {
 				'echo'              => 1,
 				'show_option_none'  => __( '&mdash; Select &mdash;' ),
 				'option_none_value' => '0',
-				'selected'          => $this->tipi_gateway_settings_options['where_to_display_it_2'],
+				'selected'          => $current,
 			)
 		); ?>
 		<?php if ( $current && $current > 0 ) { ?>
