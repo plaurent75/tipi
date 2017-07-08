@@ -4,10 +4,10 @@ $loop = new WP_Query( $args );
 if ( $loop->have_posts() ) {
 	?>
     <div class="form-group">
-        <label class="control-label col-sm-2"><?php _e('Type', 'tipi') ?></label>
+        <label class="control-label col-sm-2"><?php _e('Type', 'wp-tipi') ?></label>
         <div class="col-sm-10">
             <select class="form-control" name="objet" id="objet" data-validate="true" required="required">
-                <option value="" selected disabled><?php _e('Choose a type', 'tipi') ?></option>
+                <option value="" selected disabled><?php _e('Choose a type', 'wp-tipi') ?></option>
 				<?php
 
 				while ( $loop->have_posts() ) {

@@ -93,8 +93,8 @@ class Tipi_Admin {
 	 */
 	public function add_menu_tipi() {
 		add_menu_page(
-			__( 'TIPI Gateway', 'tipi' ), // page_title
-			__( 'TIPI Gateway', 'tipi' ), // menu_title
+			__( 'TIPI Gateway', 'wp-tipi' ), // page_title
+			__( 'TIPI Gateway', 'wp-tipi' ), // menu_title
 			'manage_options', // capability
 			'tipi-gateway-settings', // menu_slug
 			[ $this, 'tipi_options_page' ], // function
@@ -127,7 +127,7 @@ class Tipi_Admin {
 
 		add_settings_field(
 			'tipi_client_number', // id
-			__( 'Enter Your Tipi Client Number', 'tipi' ), // title
+			__( 'Enter Your Tipi Client Number', 'wp-tipi' ), // title
 			array( $this, 'enter_your_tipi_client_number_0_callback' ), // callback
 			'tipi-gateway-settings-admin', // page
 			'tipi_gateway_settings_setting_section' // section
@@ -135,7 +135,7 @@ class Tipi_Admin {
 
 		add_settings_field(
 			'input_mode_1', // id
-			__( 'Input Mode', 'tipi' ), // title
+			__( 'Input Mode', 'wp-tipi' ), // title
 			array( $this, 'input_mode_1_callback' ), // callback
 			'tipi-gateway-settings-admin', // page
 			'tipi_gateway_settings_setting_section' // section
@@ -143,14 +143,14 @@ class Tipi_Admin {
 
 		add_settings_field(
 			'where_to_display_it_2', // id
-			__( 'Where to display it ?', 'tipi' ), // title
+			__( 'Where to display it ?', 'wp-tipi' ), // title
 			array( $this, 'where_to_display_it_2_callback' ), // callback
 			'tipi-gateway-settings-admin', // page
 			'tipi_gateway_settings_setting_section' // section
 		);
 		add_settings_field(
 			'bootstrap_3', // id
-			__( 'Disable plugin css style?', 'tipi' ), // title
+			__( 'Disable plugin css style?', 'wp-tipi' ), // title
 			array( $this, 'bootstrap_3_callback' ), // callback
 			'tipi-gateway-settings-admin', // page
 			'tipi_gateway_settings_setting_section' // section
@@ -246,18 +246,18 @@ class Tipi_Admin {
 	public function custom_tipi_faq() {
 
 		$labels = array(
-			'name'           => _x( 'Tipi FAQs', 'Post Type General Name', 'tipi' ),
-			'singular_name'  => _x( 'Tipi FAQ', 'Post Type Singular Name', 'tipi' ),
-			'menu_name'      => __( 'Tipi Faqs', 'tipi' ),
-			'name_admin_bar' => __( 'Faq Tipi', 'tipi' ),
-			'archives'       => __( 'Tipi Faq Archives', 'tipi' ),
-			'all_items'      => __( 'All Tipi Faqs', 'tipi' ),
-			'add_new_item'   => __( 'Add a FAQ', 'tipi' ),
+			'name'           => _x( 'Tipi FAQs', 'Post Type General Name', 'wp-tipi' ),
+			'singular_name'  => _x( 'Tipi FAQ', 'Post Type Singular Name', 'wp-tipi' ),
+			'menu_name'      => __( 'Tipi Faqs', 'wp-tipi' ),
+			'name_admin_bar' => __( 'Faq Tipi', 'wp-tipi' ),
+			'archives'       => __( 'Tipi Faq Archives', 'wp-tipi' ),
+			'all_items'      => __( 'All Tipi Faqs', 'wp-tipi' ),
+			'add_new_item'   => __( 'Add a FAQ', 'wp-tipi' ),
 
 		);
 		$args   = array(
-			'label'               => __( 'Tipi FAQ', 'tipi' ),
-			'description'         => __( 'Manage Tipi Faq', 'tipi' ),
+			'label'               => __( 'Tipi FAQ', 'wp-tipi' ),
+			'description'         => __( 'Manage Tipi Faq', 'wp-tipi' ),
 			'labels'              => $labels,
 			'supports'            => array( 'title', 'editor', 'page-attributes', ),
 			'hierarchical'        => true,
@@ -281,15 +281,15 @@ class Tipi_Admin {
 	public function custom_tipi_objet() {
 
 		$labels = array(
-			'name'           => _x( 'Invoices Types', 'Post Type General Name', 'tipi' ),
-			'singular_name'  => _x( 'Invoices Type', 'Post Type Singular Name', 'tipi' ),
-			'menu_name'      => __( 'Tipi Invoices Types', 'tipi' ),
-			'name_admin_bar' => __( 'Invoices Types', 'tipi' ),
-			'add_new_item'   => __( 'Add invoice type', 'tipi' ),
+			'name'           => _x( 'Invoices Types', 'Post Type General Name', 'wp-tipi' ),
+			'singular_name'  => _x( 'Invoices Type', 'Post Type Singular Name', 'wp-tipi' ),
+			'menu_name'      => __( 'Tipi Invoices Types', 'wp-tipi' ),
+			'name_admin_bar' => __( 'Invoices Types', 'wp-tipi' ),
+			'add_new_item'   => __( 'Add invoice type', 'wp-tipi' ),
 		);
 		$args   = array(
-			'label'               => __( 'Invoices Type', 'tipi' ),
-			'description'         => __( 'Custom Invoices Types', 'tipi' ),
+			'label'               => __( 'Invoices Type', 'wp-tipi' ),
+			'description'         => __( 'Custom Invoices Types', 'wp-tipi' ),
 			'labels'              => $labels,
 			'supports'            => array( 'title', 'page-attributes', ),
 			'hierarchical'        => true,
@@ -316,7 +316,7 @@ class Tipi_Admin {
 	public function add_meta_boxes() {
 		add_meta_box(
 			'reference',
-			__( 'Reference', 'tipi' ),
+			__( 'Reference', 'wp-tipi' ),
 			array( $this, 'add_meta_box_callback' ),
 			'tipi_objet',
 			'normal',
@@ -326,8 +326,8 @@ class Tipi_Admin {
 
 	public function add_meta_box_callback( $post ) {
 		wp_nonce_field( 'reference_data', 'reference_nonce' );
-		echo __( 'Internal Reference', 'tipi' );
-		$label    = '<label for="reference">' . __( 'Reference', 'tipi' ) . '</label>';
+		echo __( 'Internal Reference', 'wp-tipi' );
+		$label    = '<label for="reference">' . __( 'Reference', 'wp-tipi' ) . '</label>';
 		$db_value = get_post_meta( $post->ID, 'reference_reference', true );
 		$input    = sprintf(
 			'<input class="regular-text" id="reference" name="reference" type="text" value="%s">',
@@ -376,7 +376,7 @@ class Tipi_Admin {
 	public static function custom_admin_link($links, $file) {
 	    if($file === get_wp_tipi_basename()){
 		    $links[] = '<a href="'.admin_url('admin.php?page=tipi-gateway-settings').'">' . __('Settings') . '</a>';
-		    $links[] = '<a target="_blank" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=PC7ZCMRQ79AD6">' . __('Donate', 'tipi') . '</a>';
+		    $links[] = '<a target="_blank" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=PC7ZCMRQ79AD6">' . __('Donate', 'wp-tipi') . '</a>';
         }
 		return $links;
 	}

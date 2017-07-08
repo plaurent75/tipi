@@ -14,7 +14,7 @@
 
 <!-- This file should primarily consist of HTML with a little bit of PHP. -->
 <div class="wrap">
-    <h2><?php _e( 'TIPI Gateway Settings', 'tipi' ) ?></h2>
+    <h2><?php _e( 'TIPI Gateway Settings', 'wp-tipi' ) ?></h2>
 	<?php include_once 'tipi-admin-header.php'; ?>
 
 <div id="poststuff" class="metabox-holder has-right-sidebar">

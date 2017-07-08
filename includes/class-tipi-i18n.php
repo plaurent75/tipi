@@ -35,7 +35,7 @@ class Tipi_i18n {
 	public function load_plugin_textdomain() {
 
 		load_plugin_textdomain(
-			'tipi',
+			'wp-tipi',
 			false,
 			dirname( dirname( plugin_basename( __FILE__ ) ) ) . '/languages/'
 		);

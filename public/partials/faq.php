@@ -1,7 +1,7 @@
 <div class="clearfix"></div>
 <hr />
 <div class="col-md-12">
-	<h3 class="text-center"><?php _e('Help and frequently asked questions', 'tipi') ?></h3>
+	<h3 class="text-center"><?php _e('Help and frequently asked questions', 'wp-tipi') ?></h3>
 	<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 		<?php
 		$args = array( 'post_type' => 'tipi_faq', 'posts_per_page' => -1,'orderby' => 'menu_order','order'   => 'ASC' );

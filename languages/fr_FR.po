@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Tipi\n"
-"POT-Creation-Date: 2017-07-05 14:22+0200\n"
-"PO-Revision-Date: 2017-07-05 14:23+0200\n"
+"POT-Creation-Date: 2017-07-08 05:44+0200\n"
+"PO-Revision-Date: 2017-07-08 05:44+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -139,7 +139,7 @@ msgstr "Référence"
 
 #: admin/class-tipi-admin.php:329
 msgid "Internal Reference"
-msgstr "Référence interne:"
+msgstr "Référence interne"
 
 #: admin/class-tipi-admin.php:379
 msgid "Donate"
