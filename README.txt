@@ -5,7 +5,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: credit card, ecommerce, e-commerce, mairie, city hall, collectivity
 Requires at least: 4.4
 Tested up to: 4.8
-Stable tag: 1.1.6
+Stable tag: 1.1.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Author URI: https://www.patricelaurent.net
@@ -51,6 +51,10 @@ Automatic updates should work like a charm; as always though, ensure you backup 
 7. The content from the Admin Editor
 
 == Changelog ==
+
+= 1.1.7 - 2017-07-08 =
+
+* Fix - Check if option is an array
 
 = 1.1.6 =
 

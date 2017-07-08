@@ -113,7 +113,7 @@ class Tipi_Public {
 	}
 
 	public function is_tipi_page(){
-		if ( array_key_exists('where_to_display_it_2',$this->tipi_gateway_settings_options) && is_page($this->tipi_gateway_settings_options['where_to_display_it_2']) ) return true;
+		if (is_array($this->tipi_gateway_settings_options) && array_key_exists('where_to_display_it_2',$this->tipi_gateway_settings_options) && is_page($this->tipi_gateway_settings_options['where_to_display_it_2']) ) return true;
 		else return false;
 	}
 
