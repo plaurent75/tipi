@@ -122,10 +122,11 @@ class Tipi_Public {
 			//$content is accessible in your own template too
 			$templateFile = apply_filters('tipi_gateway_public_template','partials/tipi-public-display.php');
 			ob_start();
-			include_once $templateFile;
+			include $templateFile;
 			$new_content = ob_get_clean();
 			return $new_content;
 		}
+		
 		return $content;
 	}
 
