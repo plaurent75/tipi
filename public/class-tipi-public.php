@@ -119,11 +119,15 @@ class Tipi_Public {
 
 	public function insert_tipi_content( $content ) {
 		if ( $this->is_tipi_page() && $this->tipi_gateway_settings_options['where_to_display_it_2'] == get_the_ID() ) {
+			//$content is accessible in your own template too
 			$templateFile = apply_filters('tipi_gateway_public_template','partials/tipi-public-display.php');
-			include_once $templateFile;
-			return null;
+			ob_start();
+			include $templateFile;
+			$new_content = ob_get_clean();
+			return $new_content;
 		}
-			return $content;
+		
+		return $content;
 	}
 
 	/**
