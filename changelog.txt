@@ -1,5 +1,9 @@
 == Changelog ==
 
+= 1.1.7.1 - 2017-08-24 =
+
+* Fix use of `the_content` filter
+
 = 1.1.7 - 2017-07-08 =
 
 * Fix - Check if option is an array
