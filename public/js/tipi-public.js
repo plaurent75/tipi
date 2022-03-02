@@ -82,7 +82,7 @@
     var saisie = $( "#saisie" ).val();
     var leftPosition = (window.screen.width / 2) - ((widthPop / 2) + 10);
 		var topPosition = (window.screen.height / 2) - ((heightPop / 2) + 50);
-    var frameurl = 'https://www.tipi.budget.gouv.fr/tpa/paiement.web?numcli='+numcli+'&exer='+exer+'&refdet='+refdet+'&objet='+objet+'&montant='+somme+'&mel='+mailperso+'&saisie='+saisie+'&urlcl='+urlcl+'';
+    var frameurl = 'https://www.payfip.gouv.fr/tpa/paiement.web?numcli='+numcli+'&exer='+exer+'&refdet='+refdet+'&objet='+objet+'&montant='+somme+'&mel='+mailperso+'&urlcl='+urlcl+'&saisie='+saisie+'';
 
     window.open(frameurl, '_blank','height=' + heightPop +', width=' + widthPop +', toolbar=no, menubar=no, scrollbars=no, resizable=yes, location=no, directories=no, status=no,left='
       + leftPosition + ',top=' + topPosition + ',screenX=' + leftPosition + ',screenY=' + topPosition +'');
