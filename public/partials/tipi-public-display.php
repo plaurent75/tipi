@@ -49,10 +49,10 @@ if(is_user_logged_in()){
 if($this->tipi_gateway_settings_options['input_mode_1']=='T'){
 	echo '<div class="alert alert-danger  fade in">ATTENTION, le système de paiement est actuellement en mode TEST. Certains champs seront donc désactivés et remplis automatiquement</div>';
 	$disabled=' disabled';
-	$exer_val=' value="9999"';
-	$refdet_val=' value="999999990000000000000"';
-	$montant_val=' value="1111"';
-	$montant_cts_val=' value="11"';
+	$exer_val=' value="2021"';
+	$refdet_val=' value="999999990000000000"';
+	$montant_val=' value="10"';
+	$montant_cts_val=' value="00"';
 }elseif($this->tipi_gateway_settings_options['input_mode_1']=='X'){
 	echo '<div class="alert alert-warning  fade in">ATTENTION, le système de paiement est actuellement en mode Activation. Certains champs seront donc désactivés et remplis automatiquement</div>';
 	$disabled=' disabled';
